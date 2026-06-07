@@ -509,6 +509,27 @@ img {
   padding: .25rem .75rem;
 }
 
+/* Project highlights list */
+.project__highlights {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.project__highlight {
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  font-size: var(--small-font-size);
+  color: var(--white-color);
+}
+
+.project__highlight i {
+  font-size: 1rem;
+  color: var(--first-color);
+  flex-shrink: 0;
+}
+
 /* Demo credentials block */
 .project__demo {
   background-color: hsla(var(--hue), 80%, 48%, .06);
