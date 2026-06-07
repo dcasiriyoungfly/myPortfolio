@@ -482,6 +482,17 @@ img {
   line-height: 1.8;
 }
 
+.project__note {
+  margin-top: .75rem;
+  font-size: .82rem;
+  color: var(--white-color);
+  background-color: rgba(255, 255, 255, .08);
+  border-left: 4px solid var(--first-color);
+  padding: .75rem 1rem;
+  border-radius: .75rem;
+  line-height: 1.7;
+}
+
 .project__tags {
   display: flex;
   flex-wrap: wrap;
