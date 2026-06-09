@@ -58,9 +58,9 @@ window.addEventListener('scroll', shadowHeader);
 // 2. Create a service, email template, and copy your Public Key
 // 3. Replace the placeholders below with your actual values
 
-const EMAILJS_PUBLIC_KEY  = 'YOUR_PUBLIC_KEY';   // e.g. 'abc123XYZ'
-const EMAILJS_SERVICE_ID  = 'YOUR_SERVICE_ID';   // e.g. 'service_xxxxxx'
-const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID';  // e.g. 'template_xxxxxx'
+const EMAILJS_PUBLIC_KEY  = 'U_6qrddwOKSz-hjCn';
+const EMAILJS_SERVICE_ID  = 'service_7h2sj0g';
+const EMAILJS_TEMPLATE_ID = 'template_wmdj3hy';
 
 if (EMAILJS_PUBLIC_KEY !== 'YOUR_PUBLIC_KEY') {
   emailjs.init(EMAILJS_PUBLIC_KEY);
