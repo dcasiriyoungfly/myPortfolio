@@ -609,6 +609,10 @@ img {
   gap: .6rem;
 }
 
+.project__live-btn--youtube {
+  color: #ff0000;
+}
+
 /*=============== RESUME ===============*/
 .resume__container {
   max-width: 1000px;
