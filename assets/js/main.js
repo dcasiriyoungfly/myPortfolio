@@ -60,7 +60,7 @@ window.addEventListener('scroll', shadowHeader);
 
 const EMAILJS_PUBLIC_KEY  = 'U_6qrddwOKSz-hjCn';
 const EMAILJS_SERVICE_ID  = 'service_7h2sj0g';
-const EMAILJS_TEMPLATE_ID = 'template_wmdj3hy';
+const EMAILJS_TEMPLATE_ID = 'wmdj3hy';
 
 if (EMAILJS_PUBLIC_KEY !== 'YOUR_PUBLIC_KEY') {
   emailjs.init(EMAILJS_PUBLIC_KEY);
