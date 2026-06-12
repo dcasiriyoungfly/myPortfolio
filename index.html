@@ -3,9 +3,17 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Takudzwanashe Musere — Full-stack developer and IT professional based in Harare, Zimbabwe. Flutter, FastAPI, React and cybersecurity.">
+   <meta name="theme-color" content="#0a1112">
+
+   <!--=============== OPEN GRAPH ===============-->
+   <meta property="og:title" content="Takudzwanashe Musere — Full-Stack Developer & IT Professional">
+   <meta property="og:description" content="Full-stack development, mobile applications and cybersecurity. Based in Harare, Zimbabwe.">
+   <meta property="og:type" content="website">
+   <meta property="og:image" content="assets/img/profile.jpeg">
 
    <!--=============== FAVICON ===============-->
-   <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a1112'/%3E%3Ctext x='32' y='44' font-family='Arial,sans-serif' font-size='34' font-weight='700' fill='%2322d3c5' text-anchor='middle'%3ET.%3C/text%3E%3C/svg%3E">
 
    <!--=============== REMIXICONS ===============-->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
@@ -31,65 +39,77 @@
                <li><a href="#contact"  class="nav__link">Contact</a></li>
             </ul>
 
-            <div class="nav__close" id="nav-close">
+            <a href="mailto:takudzwamusere@gmail.com" class="nav__cta button button--small">
+               Hire Me <i class="ri-arrow-right-up-line"></i>
+            </a>
+
+            <button class="nav__close" id="nav-close" aria-label="Close menu">
                <i class="ri-close-line"></i>
-            </div>
+            </button>
          </div>
 
-         <div class="nav__toggle" id="nav-toggle">
-            <i class="ri-menu-line"></i>
-         </div>
+         <button class="nav__toggle" id="nav-toggle" aria-label="Open menu">
+            <i class="ri-menu-4-line"></i>
+         </button>
       </nav>
    </header>
 
    <!--==================== MAIN ====================-->
    <main class="main">
 
-      <!--==================== HOME ====================-->
-      <section class="home section" id="home">
-         <div class="home__container container grid">
-            <div class="home__data">
-               <p class="home__subtitle">
-                  Hi, I'm a <span class="home__typed"></span>
+      <!--==================== HERO ====================-->
+      <section class="hero section" id="home">
+         <div class="hero__container container grid">
+            <div class="hero__data">
+               <span class="hero__badge">
+                  <span class="hero__badge-dot"></span> Open to new opportunities
+               </span>
+
+               <p class="hero__subtitle">
+                  Hi, I'm a <span class="hero__typed"></span><span class="sr-only">Full-Stack Developer</span>
                </p>
 
-               <h1 class="home__name">Takudzwanashe <br> Musere</h1>
+               <h1 class="hero__name">Takudzwanashe<br><span>Musere</span></h1>
 
-               <p class="home__description">
+               <p class="hero__description">
                   Information Technology graduate specializing in full-stack development,
                   mobile applications and cybersecurity. Based in Harare, Zimbabwe.
                </p>
 
-               <div class="home__social">
-                  <a href="https://linkedin.com/in/takudzwa-musere" target="_blank" class="home__social-link" aria-label="LinkedIn">
-                     <i class="ri-linkedin-box-line"></i>
-                  </a>
-                  <a href="https://github.com/dcasiriyoungfly" target="_blank" class="home__social-link" aria-label="GitHub">
-                     <i class="ri-github-line"></i>
-                  </a>
-                  <a href="https://wa.me/263775649488" target="_blank" class="home__social-link" aria-label="WhatsApp">
-                     <i class="ri-whatsapp-line"></i>
-                  </a>
-                  <a href="https://instagram.com/takudxwanashe" target="_blank" class="home__social-link" aria-label="Instagram">
-                     <i class="ri-instagram-line"></i>
-                  </a>
-               </div>
-
-               <div class="home__buttons">
+               <div class="hero__buttons">
                   <a href="Takudzwanashe_Musere_CV.docx" download class="button">
-                     Download CV <i class="ri-download-line"></i>
+                     Download CV <i class="ri-download-2-line"></i>
                   </a>
                   <a href="#projects" class="button button--ghost">
                      View Projects <i class="ri-arrow-right-line"></i>
                   </a>
                </div>
+
+               <div class="hero__social">
+                  <a href="https://linkedin.com/in/takudzwa-musere" target="_blank" rel="noopener" class="hero__social-link" aria-label="LinkedIn">
+                     <i class="ri-linkedin-box-line"></i>
+                  </a>
+                  <a href="https://github.com/dcasiriyoungfly" target="_blank" rel="noopener" class="hero__social-link" aria-label="GitHub">
+                     <i class="ri-github-line"></i>
+                  </a>
+                  <a href="https://wa.me/263775649488" target="_blank" rel="noopener" class="hero__social-link" aria-label="WhatsApp">
+                     <i class="ri-whatsapp-line"></i>
+                  </a>
+                  <a href="https://instagram.com/takudxwanashe" target="_blank" rel="noopener" class="hero__social-link" aria-label="Instagram">
+                     <i class="ri-instagram-line"></i>
+                  </a>
+               </div>
             </div>
 
-            <div class="home__image">
-               <div class="home__img-wrapper">
-                  <img src="assets/img/profile.jpeg"
-                       alt="Takudzwanashe Musere"
-                       class="home__img">
+            <div class="hero__image">
+               <div class="hero__figure">
+                  <span class="hero__ring"></span>
+                  <span class="hero__glow"></span>
+                  <div class="hero__img-wrapper">
+                     <img src="assets/img/profile.jpeg"
+                          alt="Takudzwanashe Musere"
+                          class="hero__img">
+                  </div>
                </div>
             </div>
          </div>
@@ -98,7 +118,10 @@
       <!--==================== ABOUT ====================-->
       <section class="about section" id="about">
          <div class="about__container container">
-            <h2 class="section__title">About Me</h2>
+            <div class="section__header">
+               <span class="section__kicker">Get to know me</span>
+               <h2 class="section__title">About Me</h2>
+            </div>
 
             <p class="about__description">
                I'm an IT graduate from Chinhoyi University of Technology with hands-on experience in
@@ -153,7 +176,7 @@
                </div>
                <div class="about__skill-card">
                   <i class="ri-robot-line"></i>
-                  <span>Machine Learning & Fine Tuning</span>
+                  <span>Machine Learning &amp; Fine Tuning</span>
                </div>
             </div>
          </div>
@@ -162,7 +185,10 @@
       <!--==================== PROJECTS ====================-->
       <section class="projects section" id="projects">
          <div class="projects__container container">
-            <h2 class="section__title">Projects</h2>
+            <div class="section__header">
+               <span class="section__kicker">What I've built</span>
+               <h2 class="section__title">Projects</h2>
+            </div>
 
             <div class="projects__grid grid">
 
@@ -175,14 +201,18 @@
                      <div class="project__links">
                         <a href="https://school-portal-91d9a.web.app"
                            target="_blank"
+                           rel="noopener"
                            class="project__link"
-                           title="View Live App">
+                           title="View Live App"
+                           aria-label="View Live App">
                            <i class="ri-external-link-line"></i>
                         </a>
                         <a href="https://github.com/dcasiriyoungfly"
                            target="_blank"
+                           rel="noopener"
                            class="project__link"
-                           title="View Code">
+                           title="View Code"
+                           aria-label="View Code on GitHub">
                            <i class="ri-github-line"></i>
                         </a>
                      </div>
@@ -196,7 +226,8 @@
                      Deployed live on Flutter Web with a FastAPI backend.
                   </p>
                   <p class="project__note">
-                     Note: The first login may take a few minutes while the backend server wakes up.
+                     <i class="ri-information-line"></i>
+                     The first login may take a few minutes while the backend server wakes up.
                   </p>
 
                   <div class="project__tags">
@@ -206,35 +237,43 @@
                   </div>
 
                   <div class="project__demo">
-                     <p class="project__demo-title"><i class="ri-key-line"></i> Demo Access</p>
+                     <p class="project__demo-title"><i class="ri-key-2-line"></i> Demo Access</p>
                      <div class="project__demo-grid">
                         <div class="project__demo-role">
                            <span class="project__demo-label">Admin</span>
                            <div class="project__demo-cred">
                               <span>ID</span>
-                              <code>5829A</code>
+                              <button type="button" class="project__demo-copy" data-copy="5829A" title="Copy to clipboard">
+                                 <code>5829A</code><i class="ri-file-copy-line"></i>
+                              </button>
                            </div>
                            <div class="project__demo-cred">
                               <span>Password</span>
-                              <code>admin123</code>
+                              <button type="button" class="project__demo-copy" data-copy="admin123" title="Copy to clipboard">
+                                 <code>admin123</code><i class="ri-file-copy-line"></i>
+                              </button>
                            </div>
                         </div>
                         <div class="project__demo-role">
                            <span class="project__demo-label">Teacher</span>
                            <div class="project__demo-cred">
                               <span>ID</span>
-                              <code>S002</code>
+                              <button type="button" class="project__demo-copy" data-copy="S002" title="Copy to clipboard">
+                                 <code>S002</code><i class="ri-file-copy-line"></i>
+                              </button>
                            </div>
                            <div class="project__demo-cred">
                               <span>Password</span>
-                              <code>12345678</code>
+                              <button type="button" class="project__demo-copy" data-copy="12345678" title="Copy to clipboard">
+                                 <code>12345678</code><i class="ri-file-copy-line"></i>
+                              </button>
                            </div>
                         </div>
                      </div>
                   </div>
 
-                  <a href="https://school-portal-91d9a.web.app" target="_blank" class="project__live-btn">
-                     <i class="ri-global-line"></i> Live Demo
+                  <a href="https://school-portal-91d9a.web.app" target="_blank" rel="noopener" class="project__live-btn">
+                     <i class="ri-global-line"></i> Live Demo <i class="ri-arrow-right-line"></i>
                   </a>
                </article>
 
@@ -247,14 +286,18 @@
                      <div class="project__links">
                         <a href="https://www.youtube.com/watch?v=bDVCX62HeLY"
                            target="_blank"
+                           rel="noopener"
                            class="project__link"
-                           title="Watch Demo Video">
+                           title="Watch Demo Video"
+                           aria-label="Watch Demo Video">
                            <i class="ri-youtube-line"></i>
                         </a>
                         <a href="https://github.com/dcasiriyoungfly"
                            target="_blank"
+                           rel="noopener"
                            class="project__link"
-                           title="View Code">
+                           title="View Code"
+                           aria-label="View Code on GitHub">
                            <i class="ri-github-line"></i>
                         </a>
                      </div>
@@ -293,8 +336,8 @@
                      <span class="project__tag">Content Filtering</span>
                   </div>
 
-                  <a href="https://www.youtube.com/watch?v=bDVCX62HeLY" target="_blank" class="project__live-btn project__live-btn--youtube">
-                     <i class="ri-play-circle-line"></i> Watch Demo
+                  <a href="https://www.youtube.com/watch?v=bDVCX62HeLY" target="_blank" rel="noopener" class="project__live-btn project__live-btn--youtube">
+                     <i class="ri-play-circle-line"></i> Watch Demo <i class="ri-arrow-right-line"></i>
                   </a>
                </article>
 
@@ -307,8 +350,10 @@
                      <div class="project__links">
                         <a href="https://youtu.be/eCeUltYxA18?si=8TETsHzIGAZOVg7n"
                            target="_blank"
+                           rel="noopener"
                            class="project__link"
-                           title="Watch Demo Video">
+                           title="Watch Demo Video"
+                           aria-label="Watch Demo Video">
                            <i class="ri-youtube-line"></i>
                         </a>
                      </div>
@@ -345,8 +390,8 @@
                      <span class="project__tag">Desktop App</span>
                   </div>
 
-                  <a href="https://youtu.be/eCeUltYxA18?si=8TETsHzIGAZOVg7n" target="_blank" class="project__live-btn project__live-btn--youtube">
-                     <i class="ri-play-circle-line"></i> Watch Demo
+                  <a href="https://youtu.be/eCeUltYxA18?si=8TETsHzIGAZOVg7n" target="_blank" rel="noopener" class="project__live-btn project__live-btn--youtube">
+                     <i class="ri-play-circle-line"></i> Watch Demo <i class="ri-arrow-right-line"></i>
                   </a>
                </article>
 
@@ -357,7 +402,10 @@
       <!--==================== RESUME ====================-->
       <section class="resume section" id="resume">
          <div class="resume__container container">
-            <h2 class="section__title">Resume</h2>
+            <div class="section__header">
+               <span class="section__kicker">My journey</span>
+               <h2 class="section__title">Resume</h2>
+            </div>
 
             <div class="resume__content grid">
 
@@ -369,7 +417,7 @@
 
                   <div class="resume__list">
                      <div class="resume__item">
-                        <span class="resume__date">Aug 2025 – Nov 2025 </span>
+                        <span class="resume__date">Aug 2025 – Nov 2025</span>
                         <h4 class="resume__subtitle">Computer Science Assistant</h4>
                         <p class="resume__company">All Souls Mission High School</p>
                         <p class="resume__info">
@@ -450,6 +498,7 @@
             <div class="resume__certifications grid">
                <a href="https://www.freecodecamp.org/certification/fcc984ecb1e-1717-478f-92af-76e51c182556/machine-learning-with-python-v7"
                   target="_blank"
+                  rel="noopener"
                   class="resume__cert-card">
                   <i class="ri-robot-line"></i>
                   <h4>Machine Learning with Python</h4>
@@ -458,6 +507,7 @@
                </a>
                <a href="https://www.freecodecamp.org/certification/fcc984ecb1e-1717-478f-92af-76e51c182556/scientific-computing-with-python-v7"
                   target="_blank"
+                  rel="noopener"
                   class="resume__cert-card">
                   <i class="ri-terminal-line"></i>
                   <h4>Scientific Computing with Python</h4>
@@ -466,6 +516,7 @@
                </a>
                <a href="https://www.freecodecamp.org/certification/fcc984ecb1e-1717-478f-92af-76e51c182556/responsive-web-design"
                   target="_blank"
+                  rel="noopener"
                   class="resume__cert-card">
                   <i class="ri-code-box-line"></i>
                   <h4>Responsive Web Design</h4>
@@ -479,7 +530,10 @@
       <!--==================== CONTACT ====================-->
       <section class="contact section" id="contact">
          <div class="contact__container container">
-            <h2 class="section__title">Contact Me</h2>
+            <div class="section__header">
+               <span class="section__kicker">Let's work together</span>
+               <h2 class="section__title">Contact Me</h2>
+            </div>
 
             <div class="contact__content grid">
 
@@ -512,24 +566,28 @@
                   <div class="contact__social">
                      <a href="https://linkedin.com/in/takudzwa-musere"
                         target="_blank"
+                        rel="noopener"
                         class="contact__social-link"
                         aria-label="LinkedIn">
                         <i class="ri-linkedin-box-line"></i>
                      </a>
                      <a href="https://github.com/dcasiriyoungfly"
                         target="_blank"
+                        rel="noopener"
                         class="contact__social-link"
                         aria-label="GitHub">
                         <i class="ri-github-line"></i>
                      </a>
                      <a href="https://wa.me/263775649488"
                         target="_blank"
+                        rel="noopener"
                         class="contact__social-link"
                         aria-label="WhatsApp">
                         <i class="ri-whatsapp-line"></i>
                      </a>
-                     <a href="https://instagram.com/takkudxwanashe"
+                     <a href="https://instagram.com/takudxwanashe"
                         target="_blank"
+                        rel="noopener"
                         class="contact__social-link"
                         aria-label="Instagram">
                         <i class="ri-instagram-line"></i>
@@ -544,6 +602,7 @@
                             name="name"
                             class="contact__input"
                             placeholder="Your Name"
+                            aria-label="Your Name"
                             required>
                   </div>
                   <div class="contact__form-group">
@@ -551,17 +610,19 @@
                             name="email"
                             class="contact__input"
                             placeholder="Your Email"
+                            aria-label="Your Email"
                             required>
                   </div>
                   <div class="contact__form-group">
                      <textarea name="message"
                                class="contact__input contact__textarea"
                                placeholder="Your Message"
+                               aria-label="Your Message"
                                rows="6"
                                required></textarea>
                   </div>
 
-                  <p class="contact__message" id="contact-message"></p>
+                  <p class="contact__message" id="contact-message" role="status"></p>
 
                   <button type="submit" class="button contact__button">
                      Send Message <i class="ri-send-plane-line"></i>
@@ -586,12 +647,12 @@
             <li><a href="#contact"  class="footer__link">Contact</a></li>
          </ul>
 
-         <p class="footer__copy">&copy; 2026 Takudzwanashe Musere. All rights reserved.</p>
+         <p class="footer__copy">&copy; <span id="footer-year">2026</span> Takudzwanashe Musere. All rights reserved.</p>
       </div>
    </footer>
 
    <!--========== WHATSAPP FLOAT ==========-->
-   <a href="https://wa.me/263775649488" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
+   <a href="https://wa.me/263775649488" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat on WhatsApp">
       <i class="ri-whatsapp-line"></i>
    </a>
 

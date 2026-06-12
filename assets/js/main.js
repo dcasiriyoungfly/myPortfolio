@@ -16,15 +16,14 @@ if (navClose) {
   });
 }
 
-const navLinks = document.querySelectorAll('.nav__link');
-navLinks.forEach(link => {
+document.querySelectorAll('.nav__link, .nav__cta').forEach(link => {
   link.addEventListener('click', () => {
     navMenu.classList.remove('show-menu');
   });
 });
 
-/*=============== HOME TYPED JS ===============*/
-const typed = new Typed('.home__typed', {
+/*=============== HERO TYPED JS ===============*/
+const typed = new Typed('.hero__typed', {
   strings: [
     'Full-Stack Developer',
     'Flutter Developer',
@@ -51,6 +50,25 @@ const shadowHeader = () => {
 };
 
 window.addEventListener('scroll', shadowHeader);
+
+/*=============== COPY DEMO CREDENTIALS ===============*/
+document.querySelectorAll('.project__demo-copy').forEach(btn => {
+  btn.addEventListener('click', () => {
+    if (!navigator.clipboard) return;
+
+    navigator.clipboard.writeText(btn.dataset.copy)
+      .then(() => {
+        const icon = btn.querySelector('i');
+        btn.classList.add('copied');
+        icon.className = 'ri-check-line';
+        setTimeout(() => {
+          btn.classList.remove('copied');
+          icon.className = 'ri-file-copy-line';
+        }, 1500);
+      })
+      .catch(() => { /* clipboard unavailable (e.g. file://) — ignore */ });
+  });
+});
 
 /*=============== CONTACT EMAIL JS ===============*/
 // To enable the contact form:
@@ -137,35 +155,44 @@ const scrollActive = () => {
 
 window.addEventListener('scroll', scrollActive);
 
+/*=============== FOOTER YEAR ===============*/
+const footerYear = document.getElementById('footer-year');
+if (footerYear) {
+  footerYear.textContent = new Date().getFullYear();
+}
+
 /*=============== SCROLL REVEAL ANIMATION ===============*/
-const sr = ScrollReveal({
-  origin:   'bottom',
-  distance: '60px',
-  duration: 1000,
-  delay:    200,
-  reset:    false,
-});
+// Respect users who prefer reduced motion
+if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  const sr = ScrollReveal({
+    origin:   'bottom',
+    distance: '60px',
+    duration: 1000,
+    delay:    200,
+    reset:    false,
+  });
 
-// Home
-sr.reveal('.home__data',  { origin: 'left' });
-sr.reveal('.home__image', { origin: 'right', delay: 400 });
+  // Hero
+  sr.reveal('.hero__data',  { origin: 'left' });
+  sr.reveal('.hero__image', { origin: 'right', delay: 400 });
 
-// About
-sr.reveal('.about__description', { delay: 200 });
-sr.reveal('.about__skills-title', { delay: 300 });
-sr.reveal('.about__skill-card',  { interval: 80, delay: 350 });
+  // About
+  sr.reveal('.about__description', { delay: 200 });
+  sr.reveal('.about__skills-title', { delay: 300 });
+  sr.reveal('.about__skill-card',  { interval: 80, delay: 350 });
 
-// Projects
-sr.reveal('.project__card', { interval: 150, delay: 200 });
+  // Projects
+  sr.reveal('.project__card', { interval: 150, delay: 200 });
 
-// Resume
-sr.reveal('.resume__column', { interval: 200, delay: 200 });
-sr.reveal('.resume__cert-card', { interval: 120, delay: 300 });
+  // Resume
+  sr.reveal('.resume__column', { interval: 200, delay: 200 });
+  sr.reveal('.resume__cert-card', { interval: 120, delay: 300 });
 
-// Contact
-sr.reveal('.contact__info',    { origin: 'left',  delay: 200 });
-sr.reveal('.contact__form',    { origin: 'right', delay: 300 });
-sr.reveal('.contact__info-card', { interval: 100, delay: 250 });
+  // Contact
+  sr.reveal('.contact__info',    { origin: 'left',  delay: 200 });
+  sr.reveal('.contact__form',    { origin: 'right', delay: 300 });
+  sr.reveal('.contact__info-card', { interval: 100, delay: 250 });
 
-// Section titles
-sr.reveal('.section__title', { delay: 100, distance: '30px' });
+  // Section headers
+  sr.reveal('.section__header', { delay: 100, distance: '30px' });
+}
