@@ -994,6 +994,29 @@ img {
   bottom: 3rem;
 }
 
+/*=============== WHATSAPP FLOAT ===============*/
+.whatsapp-float {
+  position: fixed;
+  right: 1.5rem;
+  bottom: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #25D366;
+  color: #fff;
+  font-size: 1.75rem;
+  z-index: var(--z-tooltip);
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+  transition: transform .2s;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
 /*=============== BREAKPOINTS ===============*/
 
 /* For small devices */
