@@ -687,6 +687,14 @@ textarea:focus-visible {
   line-height: 1.8;
 }
 
+.project__outcome {
+  font-size: var(--small-font-size);
+  color: var(--white-color);
+  line-height: 1.7;
+  border-left: 3px solid var(--accent);
+  padding-left: .85rem;
+}
+
 .project__note {
   display: flex;
   align-items: flex-start;
